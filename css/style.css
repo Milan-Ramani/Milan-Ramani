@@ -80,13 +80,17 @@ h6 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 300px;
+    width: 100%;
     transition: all ease-in-out 0.5s;
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
     background: #040b14;
     overflow-y: auto;
+}
+
+.profile {
+    float: left;
 }
 
 #header .profile img {
@@ -104,6 +108,7 @@ h6 {
     -moz-text-align-last: center;
     text-align-last: center;
     font-family: "Poppins", sans-serif;
+    display: inline-block;
 }
 
 #header .profile h1 a {
@@ -113,6 +118,11 @@ h6 {
 
 #header .profile h1 a:hover {
     color: #fff;
+}
+
+#header .profile .social-links {
+    display: block;
+    width: 200px;
 }
 
 #header .profile .social-links a {
@@ -138,6 +148,11 @@ h6 {
 
 #main {
     margin-left: 300px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 @media (max-width: 1199px) {
